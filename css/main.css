@@ -70,7 +70,7 @@ p {
 .normalz {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
-    color: #00CB00;
+    color: #00DC00;
     font-size: 2em;
 }
 
@@ -117,10 +117,11 @@ p {
 }
 
 .lng-change:hover {
-    color: #00CB00;
+    color: #00DC00;
     text-decoration: underline dashed;
     text-underline-position: under;
 }
+
 
 .vidcon {
     position: fixed;
@@ -246,11 +247,11 @@ p {
 }
 
 .achv-legend:hover {
-    border: 1px solid #00CB00;
+    border: 1px solid #00DC00;
 }
 
 .achv-legend:hover p{
-    color: #00CB00;
+    color: #00DC00;
 }
 
 .top-marker {
@@ -413,11 +414,11 @@ p {
 }
 
 .work-keyword:hover {
-    border: 1px solid #00CB00;
+    border: 1px solid #00DC00;
 }
 
 .work-keyword:hover p{
-    color: #00CB00;
+    color: #00DC00;
 }
 
 .work-keyword p {
@@ -529,7 +530,7 @@ label {
 }
 
 .menu-li:hover p{
-    color: #00CB00;    
+    color: #00DC00;    
 }
 
 
@@ -579,7 +580,7 @@ label {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 6em;
     font-weight: 600;
-    color: #00CB00;
+    color: #00DC00;
     line-height: 98%;
     text-align: center;
 }
