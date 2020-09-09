@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>fucking svg test</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <link rel="stylesheet" href="./css/test.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="marquee">
+        <svg xmlns="http://www,w3.org/2000/svg" version="1.1" viewBox="0 0 100% 100%" preserveAspectRatio="none">
+            <path id="text-line" d="M 60 60 L 1000 60 Q 1220 60 1220 280 L 1220 660 L 280 660 Q 60 660 60 440 Z" />
+            <text class="testline">
+                <textPath xlink:href="#text-line" startOffset="0%">
+                    Normal: Z &#123; A sample of Generation Z as a new standard, 오직 2020년에만 볼 수 있는, supporting the background of a new era 또 새롭게 시작될 시대 배경을 뒷받침하여 which could only be seen in 2020 새로운 기준으로서의 Z세대의 표본&#125;
+                    <animate attributeName="startOffset" from="-600" to="80" dur="10" repeatCount="indefinite" />
+                </textPath>
+            </text>
+        </svg>
+    </div>
+</body>
+
+</html>
