@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Normal: Z</title>
+    <meta name="timer" content="timer page before D-day">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+
+<body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+
+    <div class="reg-header">
+        <a href="#top"><span class="normalz">Normal<span style="margin-left: -0.1em; margin-right: 0.2em;">:</span>Z <span style="font-weight: 300; color: white">{TAGS}</span></span></a>
+    </div>
+
+    <!--메뉴-->
+
+    <label for="toggle" onclick="">
+        <input id="toggle" type="checkbox">
+        <img id="menubtn" class="landing-menu" src="img/close.svg" alt="close btn">
+
+        <div id="menu-list">
+            <ul>
+                <input id="toggle" type="checkbox">
+                <label for="toggle" onclick="">
+                    <a href="./index.html">
+                        <li class="menu-li">
+                            <p>HOME</p>
+                        </li>
+                    </a>
+                </label>
+
+                <a href="./archive.html">
+                    <li class="menu-li">
+                        <p>ARCHIVE</p>
+
+                    </li>
+                </a>
+
+                <a href="">
+                    <li class="menu-li">
+                        <p>TAGS</p>
+                    </li>
+                </a>
+
+            </ul>
+        </div>
+    </label>
+
+    <!--메뉴 끝!-->
+
+
+    <div class="slider-wrap">
+        <div class="work-slider">
+            <div class="gallerycard">
+                <img src="img/tagslider/slidertest1.jpg" alt="work">
+            </div>
+            <div class="gallerycard">
+                <img src="img/tagslider/slidertest2.jpg" alt="work">
+            </div>
+            <div class="gallerycard">
+                <img src="img/tagslider/slidertest3.jpg" alt="work">
+            </div>
+            <div class="gallerycard">
+                <img src="img/tagslider/slidertest4.jpg" alt="work">
+            </div>
+            <div class="gallerycard">
+                <img src="img/tagslider/slidertest5.jpg" alt="work">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var cards = $(".gallerycard");
+        for (var i = 0; i < cards.length; i++) {
+            var target = Math.floor(Math.random() * cards.length - 1) + 1;
+            var target2 = Math.floor(Math.random() * cards.length - 1) + 1;
+            cards.eq(target).before(cards.eq(target2));
+        }
+    </script>
+
+</body>
+
+</html>

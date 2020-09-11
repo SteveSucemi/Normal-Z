@@ -6,11 +6,11 @@
     <title>Normal: Z</title>
     <meta name="timer" content="timer page before D-day">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="http://code.jquery.com/jquery-latest.min.js" defer></script>
-
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
-<body>
+<body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+   
     <div class="main-title">
         <span class="normalz">Normal<span style="margin-left: -0.1em; margin-right: 0.2em;">:</span>Z</span>
     </div>
@@ -42,7 +42,7 @@
                     </li>
                 </a>
 
-                <a href="" class="menu-li">
+                <a href="tag.html" class="menu-li">
                     <li class="menu-li">
 
                         <p>TAGS</p>
@@ -51,6 +51,8 @@
                 </a>
 
             </ul>
+
+ 
         </div>
     </label>
 
@@ -65,6 +67,8 @@
 
     </div>
 
+    <div id="op-bg"></div>
+
     <div class="landing">
 
         <div class="section">
@@ -72,7 +76,7 @@
                 <div id="aboutnzkor">
                     <p class="kor para" style="margin-bottom: 1em;">
                         “2020년은 우리에게 많은 혁신과 변화를 요구하는 새로운 시기가 될 것이다.”<br><br>
-                        코로나19. <br>
+                        코로나 19. <br>
                         팬데믹 사태에 맞춰 새롭게 구축된 기준, NEW Normal 시대.<br>
                         우리는 이전과는 다른 새로운 질서를 모색해야 하는 시점이 다가오고 있다.<br>
                         <br>
@@ -85,39 +89,88 @@
                         새로운 기준인 Z세대의 표본을 보여주겠다는 의미로서
                         <span class="normalz" style="font-size: 1.15em; position: relative; top:0.08em;">"Normal<span style="margin-left: -0.1em; margin-right: 0.2em;">:</span>Z"</span>를 선보이고자 한다.
                     </p>
-                    <button id="lngbtn"><span class="lng-change">ENG</span></button>
                 </div>
+
 
                 <div id="aboutnzeng">
                     <p class="eng para">
                         “2020, the new era demanding us to innovate and change.”<br><br>
-                        COVID-19.<br>
+                        COVID–19.<br>
                         Time of the New Normal, <br>
                         a newly established standard for the Pandemics.<br>
                         We faced a new standard that is different from before.<br>
                         <br>
-                        ‘Everything and everyone is Online’
+                        ‘Everything and everyone is online’
                         <br>
-                        As everyone's life has changed, the online world has emerged as <br>a new alternative. Accessing online is not hard for us Z generation.
+                        As everyone's life has changed, the online world <br>as a new emerging althernative is common for us Generation Z, <br> who are already used to digital environment.
                         <br><br>
                         Greeting the start of a new era,
                         and showing the new standard of Gen Z, <br>
                         We would like to present <span class="normalz" style="font-size: 1em; position: relative; top:0.08em;">"Normal<span style="margin-left: -0.1em; margin-right: 0.2em;">:</span>Z"</span>
                     </p>
-                    <button for="lngbtn"><span class="lng-change">KOR</span></button>
                 </div>
+
+                <input id="lngbtn" type="button" value="ENG">
             </div>
 
             <div class="colophon">
-                <div class="kor" style="text-align: center;"><span class="normalz" style="font-size: 1.2em; position: relative; top:0.08em;">Normal<span style="margin-left: -0.1em; margin-right: 0.2em;">:</span>Z</span>를 만든 사람들</div>
-                <p class="kor">'역시 마찬가지로, 단순히 고통이라는 이유 때문에 고통 그 자체를 사랑하거나 추구하거나 소유하려는 자는 없다. 다만 노역과 고통이 아주 큰 즐거움을 선사하는 상황이 때로는 발생하기 때문에 고통을 찾는 사람이 있는 것이다. 간단한 예를 들자면, 모종의 이익을 얻을 수도 없는데 힘든 육체적 노력을 기꺼이 할 사람이 우리들 중에 과연 있겠는가? 하지만 귀찮은 일이 뒤따르지 않는 즐거움을 누리는 것을 선택한 사람, 혹은 아무런 즐거움도 생기지 않는 고통을 회피하는 사람을 누가 탓할 수 있겠는가?'</p>
-
-                <p class="eng">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="kor colophon-title">지도교수</p>
+                <div class="teacher col-col">
+                <p class="kor">00스튜디오 김기영</p>
+                <p class="kor">00스튜디오 이지선</p>
+                </div>
+                <p class="kor colophon-title">졸업전시준비위원회</p>
+                <div class="jjw col-col">
+                <p class="kor">강혜민<br>서정화<br>조혜원</p>
+                <p class="kor">김희수<br>손연우<br>최유진</p>
+                <p class="kor">박여진<br>이주영<br>최하영</p>
+                <p class="kor">박현수<br>조혜민<br>홍예나</p>
+                </div>
+                <img class="smvd-w" src="img/smvd_width.svg" alt="smvd">
+            </div>
+            
+            <div class="smvd-link">
+                <a href="http://smvd.sookmyung.ac.kr"><img src="img/homepage.svg" alt="homepage" style="margin-right: 15px;"></a>
+                <a href="https://www.instagram.com/smvd2019"><img src="img/instagram.svg" alt="homepage" style="margin-top: 1px;"></a>
             </div>
 
         </div>
     </div>
-    
+
+    <!--언어바꾸는 버튼 스크립투 두개-->
+    <script>
+        $(document).ready(function() {
+            $("#lngbtn").click(function() {
+                if (this.value == "ENG") this.value = "KOR";
+                else this.value = "ENG";
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#lngbtn').click(function() {
+                var state = $('#aboutnzeng').css('display');
+                if (state == 'none') {
+                    $('#aboutnzeng').show();
+                    $('#aboutnzkor').hide();
+                } else { // 그 외에는
+                    $('#aboutnzeng').hide();
+                    $('#aboutnzkor').show();
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        var bg = $("#op-bg");
+        $(window).on('scroll', function() {
+            var st = $(this).scrollTop();
+            bg.css({'opacity': (st / 500) });
+
+        });
+    </script>
 
 </body>
 
