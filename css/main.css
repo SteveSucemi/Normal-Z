@@ -374,12 +374,7 @@ input {
     transform: translate(-50%, -50%);
 }
 
-
-.worktn:hover .reg-tn {
-    display: none;
-}
-
-.worktn:hover .hover-tn {
+.worktn:hover img {
     width: 108%;
     transition: width 0.3s;
 }
