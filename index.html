@@ -10,7 +10,7 @@
 </head>
 
 <body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
-   
+
     <div class="main-title">
         <span class="normalz">Normal<span style="margin-left: -0.1em; margin-right: 0.2em;">:</span>Z</span>
     </div>
@@ -27,11 +27,11 @@
         <div id="menu-list">
             <ul>
                 <input id="toggle" type="checkbox">
-                    <a href="" class="menu-li">
-                        <li>
-                            <p>HOME</p>
-                        </li>
-                    </a>
+                <a href="" class="menu-li">
+                    <li>
+                        <p>HOME</p>
+                    </li>
+                </a>
 
                 <a href="archive.html" class="menu-li">
                     <li class="menu-li">
@@ -50,7 +50,7 @@
 
             </ul>
 
- 
+
         </div>
     </label>
 
@@ -114,22 +114,22 @@
             <div class="colophon">
                 <p class="kor colophon-title">지도교수</p>
                 <div class="teacher col-col">
-                <p class="kor">00스튜디오, 김기영</p>
-                <p class="kor">00스튜디오, 이지선</p>
+                    <p class="kor">00스튜디오, 김기영</p>
+                    <p class="kor">00스튜디오, 이지선</p>
                 </div>
                 <p class="kor colophon-title">졸업전시준비위원회</p>
                 <div class="jjw col-col">
-                <p class="kor">강혜민<br>서정화<br>조혜원</p>
-                <p class="kor">김희수<br>손연우<br>최유진</p>
-                <p class="kor">박여진<br>이주영<br>최하영</p>
-                <p class="kor">박현수<br>조혜민<br>홍예나</p>
+                    <p class="kor">강혜민<br>서정화<br>조혜원</p>
+                    <p class="kor">김희수<br>손연우<br>최유진</p>
+                    <p class="kor">박여진<br>이주영<br>최하영</p>
+                    <p class="kor">박현수<br>조혜민<br>홍예나</p>
                 </div>
                 <img class="smvd-w" src="img/smvd_width.svg" alt="smvd">
             </div>
-            
+
             <div class="smvd-link">
-                <a href="http://smvd.sookmyung.ac.kr"><img src="img/homepage.svg" alt="homepage" style="margin-right: 15px;"></a>
-                <a href="https://www.instagram.com/smvd2019"><img src="img/instagram.svg" alt="homepage" style="margin-top: 1px;"></a>
+                <a href="http://smvd.sookmyung.ac.kr" target="_blank"><img src="img/homepage.svg" alt="homepage" style="margin-right: 15px;"></a>
+                <a href="https://www.instagram.com/smvd2019" target="_blank"><img src="img/instagram.svg" alt="homepage" style="margin-top: 1px;"></a>
             </div>
 
         </div>
@@ -160,14 +160,58 @@
         });
 
     </script>
-
+    
+    <!--오퍼시티 배경 올라오는 거-->
     <script>
         var bg = $("#op-bg");
         $(window).on('scroll', function() {
             var st = $(this).scrollTop();
-            bg.css({'opacity': (st / 500) });
+            bg.css({
+                'opacity': (st / 500)
+            });
 
         });
+
+    </script>
+    
+    <!--메인타이틀 위로 붙음-->
+    <script>
+        $(document).scroll(function() {
+            if (window.scrollY > 250) {
+                $(".main-title").stop().animate({
+                    fontSize: '1em',
+                    top: '46px'
+                }, 300, "swing");
+            } else {
+                $(".main-title").stop().animate({
+                    fontSize: '4em',
+                    top: '50%'
+                }, 300, "swing");
+            }
+        });
+
+    </script>
+    
+    <!--메뉴 체인지-->
+    <script>
+        $(document).scroll(function() {
+            if (window.scrollY > 250) {
+                $("#smvd").stop().animate({
+                    right: '-40px'
+                }, 200);
+                $("#menubtn").stop().animate({
+                    right: '32px'
+                }, 200);
+            } else {
+                $("#smvd").stop().animate({
+                    right: '30px'
+                });
+                $("#menubtn").stop().animate({
+                    right: '-40px'
+                }, 200);
+            }
+        });
+
     </script>
 
 </body>
