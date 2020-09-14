@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Normal: Z</title>
+    <meta name="timer" content="timer page before D-day">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+
+<body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+
+    <div class="reg-header">
+        <a href="#top"><span class="normalz">Normal<span style="margin-left: -0.1em; margin-right: 0.2em;">:</span>Z <span style="font-weight: 300; color: white">{TAG:<span class="kor"> 언택트</span>}</span></span></a>
+    </div>
+
+    <!--메뉴-->
+
+    <label for="toggle" onclick="">
+        <input id="toggle" type="checkbox">
+        <img class="menubtn" src="img/close.svg" alt="close btn">
+
+        <div id="menu-list">
+            <ul>
+                <input id="toggle" type="checkbox">
+                    <a href="./index.html">
+                        <li class="menu-li">
+                            <p>HOME</p>
+                        </li>
+                    </a>
+
+                <a href="archive.html">
+                    <li class="menu-li">
+                        <p>ARCHIVE</p>
+
+                    </li>
+                </a>
+
+                <a href="tag.html">
+                    <li class="menu-li">
+                        <p>TAGS</p>
+                    </li>
+                </a>
+
+            </ul>
+        </div>
+    </label>
+
+    <!--메뉴 끝!-->
+    
+    <div class="tag-achv">
+
+        <div class="works">
+
+
+                <div class="boothes">
+
+                    <a href="dummie.html">
+                        <div class="booth">
+                            <div class="worktn">
+                                <img class="reg-tn" src="img/worktntest.jpg" alt="work thumbnail">
+                            </div>
+                            <p class="workname">
+                                In the heart of Austin & out of this world
+                            </p>
+                            <p class="worker">
+                                홍길동
+                            </p>
+                        </div>
+                    </a>
+
+                    <div class="booth">
+                        <div class="worktn">
+                            <img src="img/worktntest2.jpg" alt="work thumbnail">
+                        </div>
+                        <p class="workname">
+                            29620
+                        </p>
+                        <p class="worker">
+                            홍길동
+                        </p>
+                    </div>
+
+                    <div class="booth">
+                        <div class="worktn">
+                            <img src="img/worktntest.jpg" alt="work thumbnail">
+                        </div>
+                        <p class="workname">
+                            작품제목
+                        </p>
+                        <p class="worker">
+                            참가자
+                        </p>
+                    </div>
+
+                    <div class="booth">
+                        <div class="worktn">
+                            <img src="img/worktntest.jpg" alt="work thumbnail">
+                        </div>
+                        <p class="workname">
+                            작품제목
+                        </p>
+                        <p class="worker">
+                            참가자
+                        </p>
+                    </div>
+
+                    <div class="booth">
+                        <div class="worktn">
+                            <img src="img/worktntest.jpg" alt="work thumbnail">
+                        </div>
+                        <p class="workname">
+                            작품제목
+                        </p>
+                        <p class="worker">
+                            참가자
+                        </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        (function() {
+            function scrollHorizontally(e) {
+                e = window.event || e;
+                var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+                document.getElementById('navbar').scrollLeft -= (delta * 40); 
+                e.preventDefault();
+            }
+            if (document.getElementById('navbar').addEventListener) {
+                // IE9, Chrome, Safari, Opera
+                document.getElementById('navbar').addEventListener("mousewheel", scrollHorizontally, false);
+                // Firefox
+                document.getElementById('navbar').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+            } else {
+                // IE 6/7/8
+                document.getElementById('navbar').attachEvent("onmousewheel", scrollHorizontally);
+            }
+        })();
+
+    </script>
+
+</body>
+
+</html>

@@ -22,7 +22,7 @@
 
     <label for="toggle" onclick="">
         <input id="toggle" type="checkbox">
-        <img id="menubtn" class="landing-menu" src="img/close.svg" alt="close btn">
+        <img id="landing-menu" class="menubtn" src="img/close.svg" alt="close btn">
 
         <div id="menu-list">
             <ul>
@@ -125,12 +125,13 @@
                     <p class="kor">박현수<br>조혜민<br>홍예나</p>
                 </div>
                 <img class="smvd-w" src="img/smvd_width.svg" alt="smvd">
+                <div class="smvd-link">
+                    <a href="http://smvd.sookmyung.ac.kr" target="_blank"><img src="img/homepage.svg" alt="homepage" style="margin-right: 15px;"></a>
+                    <a href="https://www.instagram.com/smvd2019" target="_blank"><img src="img/instagram.svg" alt="homepage" style="margin-top: 1px;"></a>
+                </div>
             </div>
 
-            <div class="smvd-link">
-                <a href="http://smvd.sookmyung.ac.kr" target="_blank"><img src="img/homepage.svg" alt="homepage" style="margin-right: 15px;"></a>
-                <a href="https://www.instagram.com/smvd2019" target="_blank"><img src="img/instagram.svg" alt="homepage" style="margin-top: 1px;"></a>
-            </div>
+
 
         </div>
     </div>
@@ -160,7 +161,7 @@
         });
 
     </script>
-    
+
     <!--오퍼시티 배경 올라오는 거-->
     <script>
         var bg = $("#op-bg");
@@ -173,46 +174,48 @@
         });
 
     </script>
-    
+
     <!--메인타이틀 위로 붙음-->
     <script>
         $(document).scroll(function() {
-            if (window.scrollY > 250) {
+            if (window.scrollY > 200) {
                 $(".main-title").stop().animate({
                     fontSize: '1em',
                     top: '46px'
-                }, 300, "swing");
+                }, 60, "swing");
             } else {
                 $(".main-title").stop().animate({
                     fontSize: '4em',
                     top: '50%'
-                }, 300, "swing");
+                }, 60, "swing");
             }
         });
 
     </script>
-    
+
     <!--메뉴 체인지-->
     <script>
         $(document).scroll(function() {
-            if (window.scrollY > 250) {
+            if (window.scrollY > 200) {
                 $("#smvd").stop().animate({
                     right: '-40px'
                 }, 200);
-                $("#menubtn").stop().animate({
+                $("#landing-menu").stop().animate({
                     right: '32px'
                 }, 200);
             } else {
                 $("#smvd").stop().animate({
                     right: '30px'
                 });
-                $("#menubtn").stop().animate({
+                $("#landing-menu").stop().animate({
                     right: '-40px'
                 }, 200);
             }
         });
 
     </script>
+
+
 
 </body>
 
