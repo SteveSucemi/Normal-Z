@@ -25,11 +25,11 @@
         <div id="menu-list">
             <ul>
                 <input id="toggle" type="checkbox">
-                    <a href="./index.html">
-                        <li class="menu-li">
-                            <p>HOME</p>
-                        </li>
-                    </a>
+                <a href="./index.html">
+                    <li class="menu-li">
+                        <p>HOME</p>
+                    </li>
+                </a>
 
                 <a href="archive.html">
                     <li class="menu-li">
@@ -49,78 +49,48 @@
     </label>
 
     <!--메뉴 끝!-->
-    
+
     <div class="tag-achv">
 
         <div class="works">
+            <div class="boothes">
 
-
-                <div class="boothes">
-
-                    <a href="dummie.html">
-                        <div class="booth">
-                            <div class="worktn">
-                                <img class="reg-tn" src="img/worktntest.jpg" alt="work thumbnail">
-                            </div>
-                            <p class="workname">
-                                In the heart of Austin & out of this world
-                            </p>
-                            <p class="worker">
-                                홍길동
-                            </p>
-                        </div>
-                    </a>
-
-                    <div class="booth">
-                        <div class="worktn">
-                            <img src="img/worktntest2.jpg" alt="work thumbnail">
-                        </div>
-                        <p class="workname">
-                            29620
-                        </p>
-                        <p class="worker">
-                            홍길동
-                        </p>
+                <div class="booth">
+                    <div class="worktn">
+                        <img src="img/worktntest.jpg" alt="work thumbnail">
                     </div>
-
-                    <div class="booth">
-                        <div class="worktn">
-                            <img src="img/worktntest.jpg" alt="work thumbnail">
-                        </div>
-                        <p class="workname">
-                            작품제목
-                        </p>
-                        <p class="worker">
-                            참가자
-                        </p>
-                    </div>
-
-                    <div class="booth">
-                        <div class="worktn">
-                            <img src="img/worktntest.jpg" alt="work thumbnail">
-                        </div>
-                        <p class="workname">
-                            작품제목
-                        </p>
-                        <p class="worker">
-                            참가자
-                        </p>
-                    </div>
-
-                    <div class="booth">
-                        <div class="worktn">
-                            <img src="img/worktntest.jpg" alt="work thumbnail">
-                        </div>
-                        <p class="workname">
-                            작품제목
-                        </p>
-                        <p class="worker">
-                            참가자
-                        </p>
-                    </div>
-
-
+                    <p class="workname">
+                        작품제목
+                    </p>
+                    <p class="worker">
+                        참가자
+                    </p>
                 </div>
+
+                <div class="booth">
+                    <div class="worktn">
+                        <img src="img/worktntest.jpg" alt="work thumbnail">
+                    </div>
+                    <p class="workname">
+                        작품제목
+                    </p>
+                    <p class="worker">
+                        참가자
+                    </p>
+                </div>
+
+                <div class="booth">
+                    <div class="worktn">
+                        <img src="img/worktntest.jpg" alt="work thumbnail">
+                    </div>
+                    <p class="workname">
+                        작품제목
+                    </p>
+                    <p class="worker">
+                        참가자
+                    </p>
+                </div>
+
 
             </div>
 
@@ -128,12 +98,13 @@
 
     </div>
 
+
     <script>
         (function() {
             function scrollHorizontally(e) {
                 e = window.event || e;
                 var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-                document.getElementById('navbar').scrollLeft -= (delta * 40); 
+                document.getElementById('navbar').scrollLeft -= (delta * 40);
                 e.preventDefault();
             }
             if (document.getElementById('navbar').addEventListener) {
