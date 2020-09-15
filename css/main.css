@@ -593,7 +593,7 @@ input {
     display: flex;
     align-items: center;
     float: left;
-    width: 400px;
+    width: 27vw;
     margin: 0 15px;
     overflow: hidden;
 }
