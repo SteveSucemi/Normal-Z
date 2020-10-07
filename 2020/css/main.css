@@ -291,17 +291,18 @@ input {
     top:69px;
     overflow-x: scroll; 
     overflow-y: hidden;
-    padding: 20px 0 20px 30px;
+    padding: 20px 30px 20px 30px;
     z-index: 5;
     box-sizing: border-box;
     background: linear-gradient(to bottom, black, 75%, rgba(0,0,0,0));
+    display: flex;
 }
 
 .navwidth {
     display: flex;
     white-space: nowrap;
-    width: 100%;
-    justify-content: space-between;
+    width: 1456px;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
