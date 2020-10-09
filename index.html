@@ -2,23 +2,31 @@
 <html lang="ko">
 
 <head>
+
     <meta charset="UTF-8">
     <title>Normal: Z</title>
     <meta name="timer" content="timer page before D-day">
+
     <link rel="stylesheet" href="./2020/css/main.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
 </head>
 
 <body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
 
-    <div class="main-title">
+    <div class="main-title-desktop">
+        <span class="normalz">Normal<span style="margin-left: -0.1em; margin-right: 0.2em;">:</span>Z</span>
+    </div>
+    
+    <div class="main-title-mobile">
         <span class="normalz">Normal<span style="margin-left: -0.1em; margin-right: 0.2em;">:</span>Z</span>
     </div>
 
 
     <!--메뉴-->
-
+    <div class="desktop-menu">
     <img id="smvd" src="./2020/img/smvd.svg" alt="smvd logo">
 
     <label for="toggle" onclick="">
@@ -54,13 +62,59 @@
 
         </div>
     </label>
+    
+    </div>
+    
+    <div class="mobile-menu">
+    
+    <img id="smvd-mobile" src="./2020/img/smvd.svg" alt="smvd logo">
+
+    <label for="toggle-m" onclick="">
+        <input id="toggle-m" type="checkbox">
+        <img id="landing-menu-mobile" class="menubtn-mobile" src="./2020/img/close.svg" alt="close btn">
+
+        <div id="menu-list-mobile">
+            <ul>
+                <input id="toggle-m" type="checkbox">
+                <a href="" class="menu-li">
+                    <li>
+                        <p>HOME</p>
+                    </li>
+                </a>
+
+                <a href="./2020/html/archive.html" class="menu-li">
+                    <li class="menu-li">
+                        <p>ARCHIVE</p>
+
+                    </li>
+                </a>
+
+                <a href="./2020/html/tag.html" class="menu-li">
+                    <li class="menu-li">
+
+                        <p>TAGS</p>
+
+                    </li>
+                </a>
+
+            </ul>
+
+
+        </div>
+    </label>
+    
+    </div>
 
     <!--메뉴 끝!-->
 
     <div class="vidcon">
-
-        <video autoplay muted loop poster="./2020/img/vidtn.jpg">
+        <video autoplay muted loop poster="./2020/img/vidtn.jpg" class="desktop-vid">
             <source src="./2020/media/z2.mp4" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+
+        <video autoplay muted loop poster="./2020/img/vidtn2.jpg" class="mobile-vid">
+            <source src="./2020/media/z_mobile.mp4" type="video/mp4">
             Sorry, your browser doesn't support embedded videos.
         </video>
 
@@ -180,13 +234,27 @@
     <script>
         $(document).scroll(function() {
             if (window.scrollY > 200) {
-                $(".main-title").stop().animate({
+                $(".main-title-desktop").stop().animate({
                     fontSize: '1em',
                     top: '46px'
                 }, 60, "swing");
             } else {
-                $(".main-title").stop().animate({
+                $(".main-title-desktop").stop().animate({
                     fontSize: '4em',
+                    top: '50%'
+                }, 60, "swing");
+            }
+        });
+        
+        $(document).scroll(function() {
+            if (window.scrollY > 100) {
+                $(".main-title-mobile").stop().animate({
+                    fontSize: '1em',
+                    top: '46px'
+                }, 60, "swing");
+            } else {
+                $(".main-title-mobile").stop().animate({
+                    fontSize: '28px',
                     top: '50%'
                 }, 60, "swing");
             }
@@ -213,7 +281,26 @@
                 }, 200);
             }
         });
-
+    </script>
+    
+    <script>
+        $(document).scroll(function() {
+            if (window.scrollY > 50) {
+                $("#smvd-mobile").stop().animate({
+                    right: '-40px'
+                }, 200);
+                $("#landing-menu-mobile").stop().animate({
+                    right: '14px'
+                }, 200);
+            } else {
+                $("#smvd-mobile").stop().animate({
+                    right: '14px'
+                });
+                $("#landing-menu-mobile").stop().animate({
+                    right: '-40px'
+                }, 200);
+            }
+        });
     </script>
 
 
