@@ -811,7 +811,7 @@ label {
 }
 
 
-@media screen and (min-width: 901px) and (max-width: 1024px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
 
     .boothes {
         width: 100%;
@@ -823,7 +823,7 @@ label {
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 900px) {
+@media only screen and (max-width: 425px) {
 
     .boothes {
         width: 100%;
