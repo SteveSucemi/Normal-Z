@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Normal: Z</title>
+    <meta name="timer" content="timer page before D-day">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+
+<body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+
+    <div class="reg-header">
+        <span class="normalz">Normal<span style="margin-left: -0.1em; margin-right: 0.2em;">:</span>Z <span style="font-weight: 300; color: white">{WORK}</span></span>
+    </div>
+
+    <!--뒤로가기-->
+    <button onclick="goBack()">
+        <img id="gobackbtn" src="../../img/goback.svg" alt="goback"></button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    <div class="personal-work">
+
+        <div class="work-pic">
+           
+            <img src="../img/dummie/dummie1.png" alt="dummie pic">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zJCdkOpU90g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+            <img src="../img/dummie/dummie3.gif" alt="dummie pic">
+
+        </div>
+
+        <div class="work-des">
+            <!--작품명-->
+            <p class="workname">
+                요리당
+            </p>
+            
+            <!--작업자 이름-->
+            <p class="worker">
+                이주영
+            </p>
+            
+            <!--개인 SNS-->
+            <p class="personal-sns eng">
+                <!--첫번째 링크-->
+                <a href="http://juyounglee.com/" target="_blank">
+                    http://juyounglee.com/
+                </a><br>
+                <!--두번째 링크, 없을 시 공란으로 두기-->
+                <a href="https://www.instagram.com/m3iji_" target="_blank">
+                    https://www.instagram.com/m3iji_
+                </a>
+            </p>
+            
+            <!--작품설명 한글-->
+            <p class="kor para">
+         
+                소규모 공유주방 서비스, 요리당<br>
+                1인 가구와 소규모 식품 영업점을 운영하는 창업자들을 위한 서비스 디자인을 제안합니다.<br>
+
+            </p>
+            
+            <!--작품설명 영어-->
+            <p class="eng para">
+                A new module of shared-use kitchen service:<br>
+                Yoridang prepares value-added food products and meals, usually paying an hourly or daily rate to lease a space shared by others.<br>
+            
+            
+            </p>
+
+            <!--키워드 주머니-->
+            <!--키워드 주머니 안 영문 모두 대문자로 써주세욧-->
+            <div class="keyword-container">
+                <!--첫번째는 졸전 홈페이지 기준 소속된 디자인 분야-->
+                <a href="../archive.html#uxui">
+                    <div class="work-keyword">
+                        <p>UX/UI</p>
+                    </div>
+                </a>
+                
+                <!--첫번째 키워드
+                <a href="">
+                    <div class="work-keyword">
+                        <p>UX/UI</p>
+                    </div>
+                </a>-->
+                
+                <!--두번째 키워드-->
+                <div class="work-keyword">
+                    <p class="kor">웹디자인</p>
+                </div>
+                
+                <!--세번째 키워드-->
+                <div class="work-keyword">
+                    <p class="kor">공유서비스</p>
+                </div>
+                
+            </div>
+            <!--키워드 주머니 끝-->
+            
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
