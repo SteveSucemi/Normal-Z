@@ -17,71 +17,13 @@
         <a href="#top"><span class="normalz">Normal<span style="margin-left: -0.1em; margin-right: 0.2em;">:</span>Z <span style="font-weight: 300; color: white">{TAG: 3D}</span></span></a>
     </div>
 
-    <!--메뉴-->
-
-    <label for="toggle" onclick="">
-        <input id="toggle" type="checkbox">
-        <img class="menubtn" src="../../img/close.svg" alt="close btn">
-
-        <div id="menu-list">
-            <ul>
-                <input id="toggle" type="checkbox">
-                <a href="../../../index.html">
-                    <li class="menu-li">
-                        <p>HOME</p>
-                    </li>
-                </a>
-
-                <a href="../archive.html">
-                    <li class="menu-li">
-                        <p>ARCHIVE</p>
-
-                    </li>
-                </a>
-
-                <a href="../tag.html">
-                    <li class="menu-li">
-                        <p>TAGS</p>
-                    </li>
-                </a>
-
-            </ul>
-        </div>
-    </label>
-
-    <div class="mobile-menu">
-        <label for="toggle-m" onclick="">
-            <input id="toggle-m" type="checkbox">
-            <img class="menubtn-mobile" src="../img/close.svg" alt="close btn">
-
-            <div id="menu-list-mobile">
-                <ul>
-                    <input id="toggle-m" type="checkbox">
-                    <a href="../../../index.html">
-                        <li class="menu-li">
-                            <p>HOME</p>
-                        </li>
-                    </a>
-
-                    <a href="../archive.html">
-                        <li class="menu-li">
-                            <p>ARCHIVE</p>
-
-                        </li>
-                    </a>
-
-                    <a href="../tag.html">
-                        <li class="menu-li">
-                            <p>TAGS</p>
-                        </li>
-                    </a>
-
-                </ul>
-            </div>
-        </label>
-    </div>
-
-    <!--메뉴 끝!-->
+    <button onclick="goBack()">
+        <img id="gobackbtn" src="../../img/goback.svg" alt="goback"></button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
     <div class="tag-achv">
 
