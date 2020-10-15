@@ -250,7 +250,7 @@ input {
 
 
 .col-col {
-    width: 600px;
+    width: auto;
     display: grid;
     margin-bottom: 2em;
     grid-column-gap: 30px;
@@ -262,6 +262,14 @@ input {
 
 .jjw {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.jjw.extra {
+    font-size: 0.5em;
+}
+
+.extra-m {
+    display: none;
 }
 
 .smvd-w {
@@ -406,8 +414,8 @@ input {
 
 .worktn img {
     width: 101%;
-    position:absolute;
-    top:50%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -791,13 +799,17 @@ label {
     transition: transform 0.3s ease-in-out;
 }
 
-.timertn {
-    position: absolute;
+.wrapper {
     width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+    height: 100vh;
+}
+
+.timertn {
+    position: relative;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .timertn img {
@@ -806,6 +818,10 @@ label {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.timertn-m {
+    display: none;
 }
 
 .timer {
@@ -825,9 +841,15 @@ label {
     display: none;
 }
 
+.kor.para.m {
+    display: none;
+}
 
+.eng.para.m {
+    display: none;
+}
 
-@media only screen and (min-width: 426px) and (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
 
     .boothes {
         width: 100%;
@@ -867,7 +889,7 @@ label {
         overflow-y: scroll;
         display: grid;
         grid-template-rows: auto;
-        grid-row-gap: 15px;
+        grid-row-gap: 0;
         float: left;
         width: 100%;
     }
@@ -888,11 +910,22 @@ label {
         float: left;
     }
 
+    .kor.para.m {
+        display: none;
+    }
+    
+    .eng.para.m {
+    display: none;
+}
+    
+    .extra-m {
+        display: none;
+    }
 
 
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
 
 
     .desktop-vid {
@@ -929,6 +962,27 @@ label {
     .video[poster] {
         width: 100%;
     }
+    
+    .timertn-m {
+        display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.timertn-m img {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timertn {
+    display: none;
+}
 
     .main-title-desktop {
         display: none;
@@ -985,7 +1039,7 @@ label {
     .aboutnz {
         margin-top: 15vh;
         display: flex;
-        width: 100%;
+        width: auto;
         flex-direction: column;
         font-size: 0.8em;
     }
@@ -1006,7 +1060,7 @@ label {
     }
 
     .col-col {
-        width: 100%;
+        width: auto;
         display: grid;
         margin-bottom: 2em;
         grid-column-gap: 30px;
@@ -1024,7 +1078,7 @@ label {
     .smvd-w {
         width: 80px;
         margin: 0 auto;
-        margin-top: 2em;
+        margin-top: 3em;
     }
 
     #smvd-mobile {
@@ -1148,7 +1202,7 @@ label {
         display: grid;
         grid-template-columns: repeat(1, 99%);
         grid-column-gap: 25px;
-        grid-row-gap: 24px;
+        grid-row-gap: 20px;
         justify-content: space-between;
     }
 
@@ -1214,7 +1268,7 @@ label {
         overflow-y: scroll;
         display: grid;
         grid-template-rows: auto;
-        grid-row-gap: 10px;
+        grid-row-gap: 0;
         float: left;
         width: 100%;
     }
@@ -1336,5 +1390,51 @@ label {
         right: 18px;
         z-index: 99999;
     }
-
+    
+    .kor.para.m {
+        display: inline-block;
+    }
+    
+    .kor.para {
+        display: none;
+    }
+    
+    .eng.para.m {
+        display: inline-block;
+    }
+    
+    .eng.para {
+        display: none;
+    }
+    
+    .work-des .kor.para {
+        display: block;
+    } 
+    
+    .work-des .eng.para {
+        display: block;
+    } 
+    
+    .jjw.extra {
+    display: none;
+    }
+    
+    .extra-m {
+    display: block;
+        font-size: 0.5em;
+}
+    
+    .timer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 4em;
+    font-weight: 600;
+    color: #00DC00;
+    line-height: 98%;
+    text-align: center;
+}
+    
 }
