@@ -538,7 +538,7 @@ input {
     overflow-y: scroll;
     display: grid;
     grid-template-rows: auto;
-    grid-row-gap: 15px;
+    grid-row-gap: 0;
 }
 
 .work-pic img {
