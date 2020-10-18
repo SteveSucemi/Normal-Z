@@ -265,7 +265,7 @@ input {
 }
 
 .jjw.extra {
-    font-size: 0.5em;
+    font-size: 0.7em;
 }
 
 .extra-m {
@@ -548,7 +548,6 @@ input {
 
 .work-pic iframe {
     width: 100%;
-    height: 80%;
     display: block;
     top: 0;
     left: 0;
@@ -606,8 +605,8 @@ input {
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
-    -webkit-animation-duration: 400s;
-    animation-duration: 400s;
+    -webkit-animation-duration: 300s;
+    animation-duration: 300s;
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
@@ -630,8 +629,8 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70vw;
-    height: 53vh;
+    width: 55vw;
+    height: 48vh;
     box-sizing: border-box;
     margin: 0 auto;
     z-index: 999;
@@ -896,7 +895,6 @@ label {
 
     .work-pic iframe {
         width: 100%;
-        height: 60vh;
         display: block;
         top: 0;
         left: 0;
@@ -921,6 +919,46 @@ label {
     .extra-m {
         display: none;
     }
+    
+    .work-slider .gallerycard {
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 75vw;
+    margin: 0 15px;
+    overflow: hidden;
+}
+    
+    .tags {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 50vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.tags .work-keyword {
+    pointer-events: auto;
+    width: auto;
+    height: 40px;
+    padding: 0px 22px;
+    margin: 0 20px 10px 0;
+    border: 1px solid white;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    float: left;
+    font-family: 'IBM Plex Mono', monospace;
+}
 
 
 }
@@ -1275,7 +1313,6 @@ label {
 
     .work-pic iframe {
         width: 100%;
-        height: 35vh;
         display: block;
         top: 0;
         left: 0;
@@ -1435,6 +1472,47 @@ label {
     color: #00DC00;
     line-height: 98%;
     text-align: center;
+}
+    
+    .work-slider .gallerycard {
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 85vw;
+    margin: 0 15px;
+    overflow: hidden;
+}
+    
+    .tags {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vw;
+    height: 43vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.tags .work-keyword {
+    pointer-events: auto;
+    width: auto;
+    height: 32px;
+    padding: 0px 16px;
+    margin: 0 14px 9px 0;
+    border: 1px solid white;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    float: left;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
 }
     
 }
